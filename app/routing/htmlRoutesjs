@@ -1,4 +1,0 @@
-// TODO: include two routes:
-//         TODO: GET Route to /survey which should display the survey page
-
-//         TODO: A default, catch-all route that leads to home.html which dispays the home page
