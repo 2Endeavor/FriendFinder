@@ -1,10 +1,18 @@
+// Dependencies
+// ==============================
 var express = require(`express`);
-var app = express();
+var path = require ("path");
 
+// Sets up the Express App
+// ================================
+var app = express();
 var PORT = process.env.PORT || 3000;
 
+
+// Sets up the Express app to handle data parsing
+
 app.get(`/`,function(req,res){
-  res.send(`hello Maryanne :)`)
+  res.send(`FriendFinder App`)
 })
 
 app.listen(PORT, function(){
