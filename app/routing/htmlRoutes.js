@@ -15,12 +15,12 @@ app.use(express.json());
 // A default, catch-all route that leads to home.html which dispays the home page//
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "/app/public/home.html"));
+  res.sendFile(path.join(__dirname, "./app/public/home.html"));
 });
 
 // GET Route to /survey which should display the survey page//
 app.get("/survey", function(req,res){
-  res.sendFile(path.join((__dirname, "/app/public/survey.html")))
+  res.sendFile(path.join((__dirname, "./public/survey.html")))
 });
 
 // Starts the server to begin listening
