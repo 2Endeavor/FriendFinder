@@ -16,11 +16,11 @@ var candidates = [
 
   
   {
-    "name": "Ahmed",
-    "photo": "https://www.bing.com/images/search?view=detailV2&ccid=xJvP3qzP&id=7DFA6A6C744D77E72DE46DC9C4919B8424B82461&thid=OIP.xJvP3qzP1IwdztNhMlw67QHaEn&mediaurl=https%3a%2f%2fwww.telegraph.co.uk%2fcontent%2fdam%2fpets%2f2017%2f07%2f17%2fTELEMMGLPICT000131209177-xlarge_trans_NvBQzQNjv4BqLfD0EOB5CEFXzCF_NHe0S8zg6NlZ2-aGbyIcXcVFyEI.jpeg&exph=799&expw=1281&q=dog+pictures&simid=608020604706030918&selectedIndex=0",
+    "name": "Robin Scherbatsky",
+    "photo": "https://www.bing.com/th?id=AMMS_958f8fd391cc387c2300dbff88348f8a&w=300&h=300&c=12&rs=1&qlt=80&cdv=1&dpr=1.25&pid=16.2",
     "scores": [
       5,
-      1,
+      2,
       4,
       4,
       5,
@@ -34,16 +34,16 @@ var candidates = [
   },
 
   {
-    "name": "Charlie",
-    "photo": "https://www.bing.com/images/search?view=detailV2&ccid=xJvP3qzP&id=7DFA6A6C744D77E72DE46DC9C4919B8424B82461&thid=OIP.xJvP3qzP1IwdztNhMlw67QHaEn&mediaurl=https%3a%2f%2fwww.telegraph.co.uk%2fcontent%2fdam%2fpets%2f2017%2f07%2f17%2fTELEMMGLPICT000131209177-xlarge_trans_NvBQzQNjv4BqLfD0EOB5CEFXzCF_NHe0S8zg6NlZ2-aGbyIcXcVFyEI.jpeg&exph=799&expw=1281&q=dog+pictures&simid=608020604706030918&selectedIndex=0",
+    "name": "Ted Mosby",
+    "photo": "https://www.bing.com/th?id=AMMS_ae7d507edcaec798c22205933c94d2d5&w=300&h=300&c=12&rs=1&qlt=80&cdv=1&dpr=1.25&pid=16.2",
     "scores": [
       5,
-      1,
-      4,
+      3,
+      5,
       4,
       5,
       2,
-      1,
+      4,
       2,
       5,
       4,
@@ -52,22 +52,58 @@ var candidates = [
   },
 
   {
-    "name": "Same",
-    "photo": "https://www.bing.com/images/search?view=detailV2&ccid=xJvP3qzP&id=7DFA6A6C744D77E72DE46DC9C4919B8424B82461&thid=OIP.xJvP3qzP1IwdztNhMlw67QHaEn&mediaurl=https%3a%2f%2fwww.telegraph.co.uk%2fcontent%2fdam%2fpets%2f2017%2f07%2f17%2fTELEMMGLPICT000131209177-xlarge_trans_NvBQzQNjv4BqLfD0EOB5CEFXzCF_NHe0S8zg6NlZ2-aGbyIcXcVFyEI.jpeg&exph=799&expw=1281&q=dog+pictures&simid=608020604706030918&selectedIndex=0",
+    "name": "Lily Aldrin",
+    "photo": "https://www.bing.com/th?id=AMMS_a1f1830fa3c5d767bd1462777a6aefe9&w=300&h=300&c=12&rs=1&qlt=80&cdv=1&dpr=1.25&pid=16.2",
     "scores": [
       5,
-      1,
       4,
+      3,
       4,
       5,
       2,
-      1,
+      4,
       2,
-      5,
+      1,
       4,
       1
     ]
   },
+
+  {
+    "name": "Barney Stinson",
+    "photo": "https://www.bing.com/th?id=AMMS_898f4400fd8843eb1f85c1ff9f8723e8&w=300&h=300&c=12&rs=1&qlt=80&cdv=1&dpr=1.25&pid=16.2",
+    "scores": [
+      5,
+      5,
+      3,
+      4,
+      5,
+      2,
+      5,
+      2,
+      1,
+      4,
+      2
+    ]
+  },
+
+  {
+    "name": "Marshall Eriksen",
+    "photo": "https://www.bing.com/th?id=AMMS_1552aa168e54fdb3a76e59d39c3b825d&w=300&h=300&c=12&rs=1&qlt=80&cdv=1&dpr=1.25&pid=16.2",
+    "scores": [
+      5,
+      1,
+      2,
+      4,
+      5,
+      2,
+      3,
+      5,
+      5,
+      4,
+      1
+    ]
+  }
 
   
 ]
