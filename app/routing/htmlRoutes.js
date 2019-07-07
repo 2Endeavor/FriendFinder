@@ -19,9 +19,7 @@ app.get("/", function(req, res) {
 });
 
 // GET Route to /survey which should display the survey page//
-app.get("/survey", function(req,res){
-  res.sendFile(path.join((__dirname, "./public/survey.html")))
-});
+
 
 // Starts the server to begin listening
 // app.listen(PORT, function(){

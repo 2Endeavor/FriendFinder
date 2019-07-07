@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Star Wars - Express</title>
+  <title>FriendFinder</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +20,7 @@
       <h2>Find the friend with the greatest compatibility!</h2>
       <br>
       <div>
-        <a href="/survey.html"><button type="button" class = "btn btn-lg btn-primary"><h4><span class = "glyphicon glyphicon-list-alt"></span>Go to Survey</h4></button></a>
+        <a href="/survey"><button type="button" class = "btn btn-lg btn-primary"><h4><span class = "glyphicon glyphicon-list-alt"></span>Go to Survey</h4></button></a>
       </div>
     </div>
 
@@ -33,6 +33,30 @@
     
  
   </div>  <!--Container Ends Here-->
+
+<!-- Create the API  I'M NOT SURE HOW TO DO THIS :(   -->
+  <script type ="text/javascript">
+
+  $.get("/api/candidates", function(data){
+    for (var i= 0; i< data.length; i++){
+      console.log(data[i]);
+      var listGroupItems = $("<li class = 'list-group-item;>");
+        listGroupItem.append($("<h2>").text("name: " + data[i].name));
+        listGroupItem.append($("<h2>").text("photo: " + data[i].photo));
+        listGroupItem.append($("<h2>").text("q1: " + data[i].scores[0]));
+        listGroupItem.append($("<h2>").text("name: " + data[i].));
+        listGroupItem.append($("<h2>").text("name: " + data[i].name));
+
+        $("#")
+    }
+    
+  });
+  
+  
+  
+  </script>
+
+
   
 </body>
 <!-- TODO: Do we need any js refereneces in this file? -->

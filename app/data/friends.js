@@ -24,7 +24,6 @@ var candidates = [
       4,
       4,
       5,
-      2,
       1,
       2,
       5,
@@ -43,7 +42,6 @@ var candidates = [
       4,
       5,
       2,
-      4,
       2,
       5,
       4,
@@ -61,7 +59,6 @@ var candidates = [
       4,
       5,
       2,
-      4,
       2,
       1,
       4,
@@ -78,7 +75,6 @@ var candidates = [
       3,
       4,
       5,
-      2,
       5,
       2,
       1,
@@ -97,7 +93,6 @@ var candidates = [
       4,
       5,
       2,
-      3,
       5,
       5,
       4,
@@ -108,7 +103,6 @@ var candidates = [
   
 ]
 
-// Routes
 
 
 
