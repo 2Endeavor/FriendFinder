@@ -32,20 +32,39 @@ module.exports=function(app){
     
     
     // Loop through the FriendNeeded array and candidates array and determine the match. The variable score is the difference in the answers between the two arrays
-    // for (var j = 0; j < candidates.length; j++){
-    //   var score =0;
-    //   for (var i =0; i<10; i++){
-    //     score = score + Math.abs((newcandidate.scores[i]-candidates[j].scores[i]));
-    //   }
-    //   // create an array of objects that will provide the name and the match number  )
-    //   console.log(score);
-    // }
+    // create an object array that will hold the name and match score
+    var match = [];
+    
+    for (var j = 0; j < candidates.length; j++){
+      var score =0;
+      for (var i =0; i<10; i++){
+        score = score + Math.abs((newcandidate.scores[i]-candidates[j].scores[i]));
+      }
+      //console.log(score);
+      // create an array of objects that will provide the name and the match number  )
+    //  console.log(score);
+    //  console.log(candidates[j].name);
+      match.push({score:score,candidate:candidates[j].name});
+      // match.push(score,candidate[j].name)
+      // match.push(score);
+     // console.log("match");
+      //console.log(match);
+    }
     
     candidates.push(newcandidate);
-    console.log(candidates.name)
+    //console.log(candidates[j].name)
+    console.log(match);
     
     
     res.json(newcandidate);
+
+    var bestMatch= []
+    for (var i= 0; i<match.length; i++){
+      if (match[i].score<match[i++].score)
+      bestMatch = [];
+  
+    }
+    console.log (bestMatch);
   })
   
   

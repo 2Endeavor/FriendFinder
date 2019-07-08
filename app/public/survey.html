@@ -201,12 +201,12 @@
   // Capture the form inputs
   $("#submit").on("click", function(event){
     event.preventDefault();
-    // var newcandidate = {
-    //   name: $("#name").val().trim(),
-    //   photo: $("#photo").val().trim(),
-    //   scores: [$("#q1").val(), $("#q2").val(), $("#q3"), $("#q4"), $("#q5"), $("#q6"), $("#q7"), $("#q8"), $("#q9"), $("#q10")]
-    // }
-    //console.log("New candidate " + newcandidate.scores(0));
+    var newcandidate = {
+      name: $("#name").val().trim(),
+      photo: $("#photo").val().trim(),
+      scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+    }
+    console.log(newcandidate);
 
     // Form validation
     function validateForm(){
@@ -241,15 +241,15 @@
       //   ]
       // };
       // // AJAX post the data to the candidates API
-      // $.post("/api/candidates",userData, function(data){
-      //   console.log("this is the user data" + userData);
-      //   // Grab the result from the AJAX post so that the best match's name and photo are displayed
-      //   // $("#match-name").text(data.name);
-      //   // $("#match-img").attr("src", data.photo);
+      $.post("/api/candidates",newcandidate, function(data){
+        console.log(newcandidate);
+        // Grab the result from the AJAX post so that the best match's name and photo are displayed
+        // $("#match-name").text(data.name);
+        // $("#match-img").attr("src", data.photo);
 
-      //   // // Show the modal with the best match
-      //   // $("#results-modal").modal("toggle");
-      // });
+        // // Show the modal with the best match
+        // $("#results-modal").modal("toggle");
+      });
 
     // } else{
     //   alert("Please fill out all fields before submitting!");
