@@ -50,20 +50,35 @@ module.exports=function(app){
      // console.log("match");
       //console.log(match);
     }
-    
+
+    console.log(match.length);
+    console.log(match[0].score);
+
+    var bestMatch = []
+    for (var i = 0; i<match.length; i++){
+      var temp = match[0].score
+      if (match[i].score<temp){
+        bestMatch = match[i];
+        
+      }
+    }
+
+
     candidates.push(newcandidate);
     //console.log(candidates[j].name)
+   //This logs the names and numbers
     console.log(match);
     
     
     res.json(newcandidate);
 
-    var bestMatch= []
-    for (var i= 0; i<match.length; i++){
-      if (match[i].score<match[i++].score)
-      bestMatch = [];
+    // var bestMatch= []
+    // for (var i= 0; i<match.length; i++){
+    //  // if (match[i].score<match[i++].score)
+    // //  bestMatch = match[i];
+    // bestMatch.push(match[i].score)
   
-    }
+    // }
     console.log (bestMatch);
   })
   
