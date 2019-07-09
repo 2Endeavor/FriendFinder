@@ -70,7 +70,7 @@ module.exports=function(app){
     console.log(match);
     
     
-    res.json(newcandidate);
+    res.json(bestMatch);
 
     // var bestMatch= []
     // for (var i= 0; i<match.length; i++){
