@@ -44,7 +44,7 @@ module.exports=function(app){
       // create an array of objects that will provide the name and the match number  )
     //  console.log(score);
     //  console.log(candidates[j].name);
-      match.push({score:score,candidate:candidates[j].name});
+      match.push({score:score,candidate:candidates[j].name,photo:candidates[j].photo});
       // match.push(score,candidate[j].name)
       // match.push(score);
      // console.log("match");
@@ -54,7 +54,7 @@ module.exports=function(app){
     console.log(match.length);
     console.log(match[0].score);
 
-    var bestMatch = []
+    var bestMatch = {}
     for (var i = 0; i<match.length; i++){
       var temp = match[0].score
       if (match[i].score<temp){
@@ -62,15 +62,19 @@ module.exports=function(app){
         
       }
     }
-
-
+    
+    
     candidates.push(newcandidate);
     //console.log(candidates[j].name)
-   //This logs the names and numbers
-    console.log(match);
+    //This logs the names and numbers
+    //   console.log("line 70")
+    //  console.log(match);
     
+    console.log("best match line 73")
+    console.log(bestMatch);
     
     res.json(bestMatch);
+    //res.bestMatch;
 
     // var bestMatch= []
     // for (var i= 0; i<match.length; i++){
@@ -79,7 +83,8 @@ module.exports=function(app){
     // bestMatch.push(match[i].score)
   
     // }
-    console.log (bestMatch);
+    // console.log("line 82");
+    // console.log (match);
   })
   
   
